@@ -125,7 +125,7 @@ def hemisphere(browser):
 
     hemisphere_image_urls = []
 
-    # Get a List of All the Hemisphere
+    # Get a List of All hemispheres
     links = browser.find_by_css("a.product-item h3")
     for item in range(len(links)):
         hemisphere = {}
@@ -167,7 +167,7 @@ def scrape_hemisphere(html_text):
 
 # Main Web Scraping Bot
 
-def scrape_all():
+def scrape():
     executable_path = {"executable_path": "chromedriver"}
     browser = Browser("chrome", **executable_path, headless=False)
     news_title, news_p = mars_news(browser)
@@ -191,4 +191,4 @@ def scrape_all():
 
 
 if __name__ == "__main__":
-    print(scrape_all())
+    print(scrape())
