@@ -27,7 +27,7 @@ def mars_news(browser):
     # Parse Results HTML with BeautifulSoup
     html = browser.html
     news_soup = BeautifulSoup(html, "html.parser")
-    browser.is_element_present_by_css("ul.item_list li.slide", wait_time=1)
+    browser.is_element_present_by_css("ul.item_list li.slide", wait_time=5)
 
     try:
         slide_element = news_soup.select_one("ul.item_list li.slide")
