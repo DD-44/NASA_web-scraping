@@ -1,0 +1,16 @@
+/* 
+Mars Weather
+*/
+
+tr {
+  background-color: gray;
+  color: black;
+}
+
+.table-striped {
+  color: white;
+}
+
+.table {
+  color: $hite;
+}
